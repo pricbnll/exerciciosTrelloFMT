@@ -5,18 +5,28 @@ const numeros = [4,1,5,10,8]
 for (let i = 0; i < numeros.length; i++){
     console.log(numeros[i])
 }
-// // 4
-// // 1
-// // 5
-// // 10
-// // 8
+// 4
+// 1
+// 5
+// 10
+// 8
+
+// const numeros = []
+// for(let i = 0; i < 5; i++){
+// numeros.push(prompt(`Digite o ${i + 1} número: `))
+// }
+
+// for(let i = 0; i < 5; i++){
+// console.log(`O ${i + 1} número é ${numeros[i]}`)
+// }
+
+// console.log(numeros)
+
 
 //[M1S05] Ex 4 - Soma de Elementos - Utilizando o array numeros do exercício anterior, calcule e imprima a soma de todos os elementos do array. Utilize o reduce para realizar a soma.
 
-const soma = numeros.reduce((acc, n) => acc + n, 0);
+const soma = numeros.reduce((acc, n) => acc + n, 0)
 console.log(`A soma dos números do array é ${soma}`)
-// //A soma dos números do array é 28
-
 
 //[M1S05] Ex 5 - Ordenação Crescente - Crie um novo array (usando spread [...foobar])chamado numerosOrdenados contendo os mesmos números do array numeros. Em seguida, ordene esse novo array em ordem crescente e imprima-o no console.
 
