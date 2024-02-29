@@ -285,3 +285,120 @@ case 5:
     break;
 } */
 
+// //Outros exemplor na internet
+// //let frutas = [];
+// let laticinios = [];
+// let doces = [];
+// let congelados = [];
+// let bebidas = [];
+// let comida = "";
+// let categoria = "";
+
+// let adicionarMais = "sim"; // valor inicial como "sim", porque a primeira vez sempre vai entrar no while
+// while(adicionarMais != "não"){
+//     adicionarMais = prompt("Você deseja adicionar uma comida na sua lista de compras? Responda com 'sim' ou 'não'.");
+//     while (adicionarMais != "sim" && adicionarMais != "não"){//enquanto o texto for diferente de "sim" e de "não",
+//         alert (`Operação não reconhecida!`);
+//         adicionarMais = prompt("Você deseja adicionar uma comida na lista de compras? Responda 'sim' ou 'não'.");
+//     }
+
+//     if (adicionarMais === "não"){ //se o texto lido for "não", sair do while
+//         break;
+//     }
+
+//     comida = prompt("Qual comida você deseja inserir?");
+//     categoria = prompt("Em qual categoria essa comida se encaixa: 'frutas', 'laticinios', 'doces', 'congelados' ou 'bebidas'?");
+//     if(categoria === 'frutas'){
+//         frutas.push(comida);
+//     } else if  (categoria === 'laticinios'){
+//         laticinios.push(comida);
+//     } else if (categoria === 'doces'){
+//         doces.push(comida);
+//     } else if (categoria === 'congelados'){
+//         congelados.push(comida);
+//     } else if (categoria === 'bebidas'){
+//         bebidas.push(comida)
+//     } else {
+//         alert("Essa categoria não foi pré-definida.")    
+//     }
+// }
+// alert (`Lista de compras: \n Frutas: ${frutas}\n Laticínios: ${laticinios}\n Doces: ${doces}\n Congelados: ${congelados}\n Bebidas: ${bebidas}`);
+
+// //No código fornecido, você está adicionando itens à lista de compras com base na categoria informada pelo usuário. Agora, para remover os itens, você pode utilizar o método splice().Vamos supor que você queira remover um item da lista de frutas. Primeiro, você precisa encontrar a posição desse item na lista. Para isso, você pode utilizar o método indexOf(). Por exemplo:
+
+// let itemRemover = prompt("Qual fruta você deseja remover?");
+// let posicao = frutas.indexOf(itemRemover);
+
+// //Em seguida, você pode utilizar o método splice() para remover o item da lista. Por exemplo:
+
+// frutas.splice(posicao, 1);
+
+
+// //O primeiro parâmetro do splice() é a posição do item que você deseja remover e o segundo parâmetro é a quantidade de itens que você deseja remover a partir dessa posição. Você pode repetir esse processo para cada categoria da sua lista de compras. - https://cursos.alura.com.br/forum/topico-duvida-7daysofcode-279276
+
+// //#2
+// Sabe quando você vai no supermercado com uma lista de compras e acaba ficando indo e voltando nos mesmos corredores até completar a lista?
+
+// RESPOSTA
+
+// // Inicializando as listas de categorias
+// let frutas = [];
+// let laticinios = [];
+// let congelados = [];
+// let doces = [];
+
+// // Função para adicionar item à categoria correspondente
+// function adicionarItemACategoria(item, categoria) {
+//   switch (categoria) {
+//     case "frutas":
+//       frutas.push(item);
+//       break;
+//     case "laticinios":
+//       laticinios.push(item);
+//       break;
+//     case "congelados":
+//       congelados.push(item);
+//       break;
+//     case "doces":
+//       doces.push(item);
+//       break;
+//   }
+// }
+
+// // Início do programa
+// while (true) {
+//   let adicionar = prompt("Deseja adicionar uma comida na sua lista de compras? (sim/não)");
+
+//   if (adicionar.toLowerCase() !== "sim") {
+//     break;
+//   }
+
+//   let comida = prompt("Qual comida você deseja inserir?");
+//   let categoria = prompt("Em qual categoria essa comida se encaixa? (frutas, laticinios, congelados, doces)");
+
+//   adicionarItemACategoria(comida, categoria);
+// }
+
+// // Exibindo a lista de compras organizada
+// alert(`Lista de compras:
+//   Frutas: ${frutas.join(", ")}
+//   Laticínios: ${laticinios.join(", ")}
+//   Congelados: ${congelados.join(", ")}
+//   Doces: ${doces.join(", ")}
+// `);
+
+// HTML
+
+// <!DOCTYPE html>
+// <html lang="pt-BR">
+// <head>
+//   <meta charset="UTF-8">
+//   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//   <title>Organizador de Lista de Compras</title>
+// </head>
+// <body>
+//   <script src="listaDeCompras.js"></script>
+// </body>
+// </html>
+
+// {/* Thieres Rafael LinkedIn */}

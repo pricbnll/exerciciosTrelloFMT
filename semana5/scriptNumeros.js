@@ -15,12 +15,22 @@ const numeros = []
 for(let i = 0; i < 5; i++){
 numeros.push(parseInt(prompt(`Digite o ${i + 1} número: `)))
 }
+//Digite o 1 número: 2
+// Digite o 2 número: 3
+// Digite o 3 número: 5
+// Digite o 4 número: 1
+// Digite o 5 número: 4
 
 for(let i = 0; i < 5; i++){
 console.log(`O ${i + 1} número é ${numeros[i]}`)
-}
-
+// }
+// O 1 número é 2
+// O 2 número é 3
+// O 3 número é 5
+// O 4 número é 1
+// O 5 número é 4
 console.log(numeros)
+// [ 2, 3, 5, 1, 4 ]
 
 
 //[M1S05] Ex 4 - Soma de Elementos - Utilizando o array numeros do exercício anterior, calcule e imprima a soma de todos os elementos do array. Utilize o reduce para realizar a soma.
