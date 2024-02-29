@@ -1,26 +1,26 @@
 //[M1S05] Ex 3 - Iteração Básica - Crie um array chamado numeros contendo cinco números inteiros. Utilize um loop for para imprimir cada número do array no console. Desafio: utilize a biblioteca prompt-sync para receber cada um dos 5 números.
 
 const prompt = require("prompt-sync")();
-const numeros = [4,1,5,10,8]
-for (let i = 0; i < numeros.length; i++){
-    console.log(numeros[i])
-}
+// const numeros = [4,1,5,10,8]
+// for (let i = 0; i < numeros.length; i++){
+//     console.log(numeros[i])
+// }
 // 4
 // 1
 // 5
 // 10
 // 8
 
-// const numeros = []
-// for(let i = 0; i < 5; i++){
-// numeros.push(prompt(`Digite o ${i + 1} número: `))
-// }
+const numeros = []
+for(let i = 0; i < 5; i++){
+numeros.push(parseInt(prompt(`Digite o ${i + 1} número: `)))
+}
 
-// for(let i = 0; i < 5; i++){
-// console.log(`O ${i + 1} número é ${numeros[i]}`)
-// }
+for(let i = 0; i < 5; i++){
+console.log(`O ${i + 1} número é ${numeros[i]}`)
+}
 
-// console.log(numeros)
+console.log(numeros)
 
 
 //[M1S05] Ex 4 - Soma de Elementos - Utilizando o array numeros do exercício anterior, calcule e imprima a soma de todos os elementos do array. Utilize o reduce para realizar a soma.

@@ -2,7 +2,7 @@
 
 const prompt = require("prompt-sync")();
 const frutas = ["Maça", "Laranja", "Pera"];
-
+console.log(frutas)
 // const frutas = []
 // for(let i = 0; i < 3; i++){
 // frutas.push(prompt("Digite o nome da fruta: "))
