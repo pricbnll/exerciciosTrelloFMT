@@ -51,3 +51,4 @@ canetaBicAzul.vender(4); //Estoque insuficiente
 canetaBicAzul.repor(5);   //A quantidade reposta é 5
 console.log(canetaBicAzul);   //Produto { nome: 'Caneta Bic Azul', preco: 4.5, quantidade: 5 }
 canetaBicAzul.mostrarEstoque();    //O produto CANETA BIC AZUL possui 5 unidades disponíveis”
+canetaBicAzul.vender(3); //A quantidade vendida é 3 e a quantidade atual em estoque é 2
