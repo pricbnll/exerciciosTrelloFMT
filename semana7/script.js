@@ -10,17 +10,17 @@
 class Produto {
   nome;
   preco;
-  quantidade = 0;
+  quantidade;
 
-  constructor(valorNome, valorPreco){
+  constructor(valorNome, valorPreco, valorQuantidade){
     this.nome = valorNome;
     this.preco = valorPreco;
-    // this.quantidade = valorQuantidade;
+    this.quantidade = valorQuantidade;
   }
 
-  vender(qtdeVendida) {
+  Vender(qtdeVendida) {
     if(qtdeVendida > this.quantidade){
-      console.log(`Estoque insuficiente`)
+      console.log(`Estoque insuficiente. A quantidade existente no estoque atualmente: ${this.quantidade} unidade(s)`)
       return
     }
     this.quantidade -= qtdeVendida
@@ -28,27 +28,28 @@ class Produto {
     return this.quantidade
   }
 
-  repor(qtdeReposta){
+  Repor(qtdeReposta){
     if(qtdeReposta > this.quantidade){
       this.quantidade += qtdeReposta
       console.log(`A quantidade reposta é ${this.quantidade}`)
     }
   }
 
-  mostrarEstoque(novoProduto){
+  MostrarEstoque(novoProduto){
     //“O produto CANETA BIC AZUL possui 5 unidades disponíveis”
-    console.log(`O produto ${this.nome.toUpperCase()} possui ${this.quantidade} unidades disponíveis”`)
+    console.log(`O produto ${this.nome.toUpperCase()} possui ${this.quantidade} unidades disponíveis”\n`) // para quebrar a linha \n
   }
 
-  atualizarPreco(novoPreco){
-  console.log(`O preço do produto ${this.nome} é ${novoPreco}`)
+  AtualizarPreco(novoPreco){
+  console.log(`O novo preço do produto ${this.nome} é ${novoPreco}`)
   }
 }
 
-let canetaBicAzul = new Produto("Caneta Bic Azul", 4.50);
+const canetaBicAzul = new Produto("Caneta Bic Azul", 4.50, 0);
 
-canetaBicAzul.vender(4); //Estoque insuficiente
-canetaBicAzul.repor(5);   //A quantidade reposta é 5
 console.log(canetaBicAzul);   //Produto { nome: 'Caneta Bic Azul', preco: 4.5, quantidade: 5 }
-canetaBicAzul.mostrarEstoque();    //O produto CANETA BIC AZUL possui 5 unidades disponíveis”
-canetaBicAzul.vender(3); //A quantidade vendida é 3 e a quantidade atual em estoque é 2
+canetaBicAzul.Vender(4); //Estoque insuficiente. A quantidade existente no estoque atualmente: 0 unidade(s)
+canetaBicAzul.Repor(5);   //A quantidade reposta é 5
+canetaBicAzul.MostrarEstoque();    //O produto CANETA BIC AZUL possui 5 unidades disponíveis”
+canetaBicAzul.Vender(3); //A quantidade vendida é 3 e a quantidade atual em estoque é 2
+canetaBicAzul.AtualizarPreco(1.99); //O novo preço do produto Caneta Bic Azul é 1.99
