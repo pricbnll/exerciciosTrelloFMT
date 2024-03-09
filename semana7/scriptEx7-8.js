@@ -25,8 +25,9 @@ class Cliente extends Pessoa {
         this.clienteDesde = valorClienteDesde;
     }  
 
+    
+    // // Verifica se o valor passado está no formato correto, não há necessidade mas deixei por estudo.
     // setData(data) {
-    //     // Verifica se o valor passado está no formato correto
     //     const regex = /^\d{4}-\d{2}-\d{2}$/;
     //     if (regex.test(data)) {
     //       this.data = data;
@@ -75,10 +76,8 @@ console.log(novoCliente);
 // console.log(novoCliente);
 // // resposta no console ????????
 // // Cliente {
-// //     nome: 35672233,
-// //     idade: 'carlos@email.com',
-// //     profissao: '2017-11-22',
-// //     telefone: Pessoa { nome: 'Carlos', idade: 37, profissao: 'Engenheiro' },
-// //     email: undefined,
-// //     clienteDesde: undefined
-// //   }
+//   telefone: 35672233,
+//   email: 'carlos@email.com',
+//   clienteDesde: '2017-11-22',
+//   pessoa: Pessoa { nome: 'Carlos', idade: 37, profissao: 'Engenheiro' }
+// }
