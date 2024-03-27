@@ -5,7 +5,7 @@ Este respositório é para minha prática e resolução dos exercícios proposto
 
 ## 💻 Sobre cada semanas
 
-São 3 aulas na semana (terças, quintas e nas sextas com resolução dos exercícios e tira dúvidas das 19:00 as 22:00 horas)
+São 3 aulas na semana (terças, quintas e nas sextas com resolução dos exercícios e tira dúvidas das 19:00 as 22:00 horas) com início no dia 05 de fevereiro de 2024 ate dia 03 de junho de 2024.
 
 * SEMANA 1 **com o professor Bruno Costa** - INTRODUÇÃO AO CURSO E FERRAMENTAS QUE IREMOS UTILIZAR
 * SEMANA 2 **com o professor Bruno Costa** - INTRODUÇÃO A LINGUAGEM E LÓGICA DE PROGRAMAÇÃO, INTRODUÇÃO A HTML E CSS
