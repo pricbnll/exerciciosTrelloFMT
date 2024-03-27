@@ -7,14 +7,22 @@ Este respositório é para minha prática e resolução dos exercícios proposto
 
 São 3 aulas na semana (terças, quintas e nas sextas com resolução dos exercícios e tira dúvidas das 19:00 as 22:00 horas) com início no dia 05 de fevereiro de 2024 ate dia 03 de junho de 2024.
 
-* SEMANA 1 **com o professor Bruno Costa** - INTRODUÇÃO AO CURSO E FERRAMENTAS QUE IREMOS UTILIZAR
-* SEMANA 2 **com o professor Bruno Costa** - INTRODUÇÃO A LINGUAGEM E LÓGICA DE PROGRAMAÇÃO, INTRODUÇÃO A HTML E CSS
-* SEMANA 3 **com a professora Rayane Cristina** - INTRODUÇÀO AO NODE.JS E JAVASCRIPT
-* SEMANA 4 **com a professora Rayane Cristina** - GIT, GITHUB E FUNÇÕES NO JAVASCRIPT, LAÇOS DE REPETIÇÃO
-* SEMANA 5 **com a professora Rayane Cristina** - ARRAYS - MAP, FILTER, REDUCE, OBJETOS SIMPLES - Destructing, Spread/rest operator, npm init, pasta node_modules, package.json e package-lock.json, comandos de CLI, gitignore
-* SEMANA 6 **com a professora Rayane Cristina** - PROMISE E LOCAL STORAGE, FETCH API, REQUISIÇÕES E ASYNC/AWAIT
-* SEMANA 7 **com o professor Bruno Costa** - FUNÇÕES AVANÇADAS E CLOSURES, INTRODUÇÃO À POO EM JAVASCRIPT, ATRIBUTOS E METODOS, USO DO THIS, CONSTRUTIRES E HERANÇA EM JAVASCRIPT
-* SEMANA 8 **com o professor Bruno Costa** - POSTGRESQL, COMANDOS DDL E DML, JOIN
+* SEMANA 1 **com o professor Bruno Costa**
+       - INTRODUÇÃO AO CURSO E FERRAMENTAS QUE IREMOS UTILIZAR
+* SEMANA 2 **com o professor Bruno Costa**
+       - INTRODUÇÃO A LINGUAGEM E LÓGICA DE PROGRAMAÇÃO, INTRODUÇÃO A HTML E CSS
+* SEMANA 3 **com a professora Rayane Cristina**
+       - INTRODUÇÀO AO NODE.JS E JAVASCRIPT
+* SEMANA 4 **com a professora Rayane Cristina**
+       - GIT, GITHUB E FUNÇÕES NO JAVASCRIPT, LAÇOS DE REPETIÇÃO
+* SEMANA 5 **com a professora Rayane Cristina**
+       - ARRAYS - MAP, FILTER, REDUCE, OBJETOS SIMPLES - Destructing, Spread/rest operator, npm init, pasta node_modules, package.json e              package-lock.json, comandos de CLI, gitignore
+* SEMANA 6 **com a professora Rayane Cristina**
+       - PROMISE E LOCAL STORAGE, FETCH API, REQUISIÇÕES E ASYNC/AWAIT
+* SEMANA 7 **com o professor Bruno Costa**
+       - FUNÇÕES AVANÇADAS E CLOSURES, INTRODUÇÃO À POO EM JAVASCRIPT, ATRIBUTOS E METODOS, USO DO THIS, CONSTRUTIRES E HERANÇA EM JAVASCRIPT
+* SEMANA 8 **com o professor Bruno Costa**
+       - POSTGRESQL, COMANDOS DDL E DML, JOIN
 * SEMANA 9 **com o professor Rawan.H** - NODE.JS - EXPRESS
 
 
@@ -24,6 +32,7 @@ São 3 aulas na semana (terças, quintas e nas sextas com resolução dos exerc�
 - VsCode - aprendendo a usar a ferramenta e suas extensões.
 - GitHub - aprendendo a utilizar sempre enviando ou trazendo para meu local o reposiótio, fsaendo alterações...
 - Node.js - Is=nstalação
+  
 
 ## 🧑🏻‍🏫 Professores
 
