@@ -83,7 +83,7 @@ alter table Funcionarios
     drop constraint idDepartamento;    -- ou drop foreign key idDepartamento
 alter table Funcionarios  
     add constraint  idDepartamento   --continua int not null., so alteramos a restrição
-	foreign key (idDepartamento) references Departamento (id) on delete cascade;
+	foreign key (idDepartamento) references Departamento (id) on delete cascade;  
 delete from Departamento where id = 1;
  --ou
 delete from Funcionarios where idDepartamento = 1;
