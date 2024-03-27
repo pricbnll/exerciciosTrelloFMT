@@ -1,8 +1,10 @@
-# Exercícios do Trello
+#🚦Exercícios do Trello
 
 Este respositório é para minha prática e resolução dos exercícios proposto pelos professores durente o curso FuturoDev trilha TRIP o qual estou inserida a desenvolver neste curso ofertado pelo FloripaMaisTech com a Lab365, Senai e Acate/SC.
 
-## Sobre as semanas
+## 💻 Sobre cada semanas
+
+São 3 aulas na semana (terças, quintas e nas sextas com resolução dos exercícios e tira dúvidas das 19:00 as 22:00 horas)
 
 * SEMANA 1 **com o professor Bruno Costa** - INTRODUÇÃO AO CURSO E FERRAMENTAS QUE IREMOS UTILIZAR
 * SEMANA 2 **com o professor Bruno Costa** - INTRODUÇÃO A LINGUAGEM E LÓGICA DE PROGRAMAÇÃO, INTRODUÇÃO A HTML E CSS
@@ -22,7 +24,7 @@ Este respositório é para minha prática e resolução dos exercícios proposto
 - GitHub - aprendendo a utilizar sempre enviando ou trazendo para meu local o reposiótio, fsaendo alterações...
 - Node.js - Is=nstalação
 
-## ✒️ Professores
+## 🧑🏻‍🏫 Professores
 
 * **Bruno Costa** - [GitHub](https://github.com/Bruno-Costa-fig)
 * **Rayane Cristina** - [GitHub](https://github.com/raydevcp20)
