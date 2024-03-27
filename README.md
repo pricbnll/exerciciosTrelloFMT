@@ -1,4 +1,5 @@
-#🚦Exercícios do Trello
+
+# 🚦 Exercícios do Trello
 
 Este respositório é para minha prática e resolução dos exercícios proposto pelos professores durente o curso FuturoDev trilha TRIP o qual estou inserida a desenvolver neste curso ofertado pelo FloripaMaisTech com a Lab365, Senai e Acate/SC.
 
