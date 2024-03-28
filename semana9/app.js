@@ -9,10 +9,12 @@ const app = express()
 app.get("/sobre", function(req,res){
     res.send("Este é o aplicativo do exercicio 2 da semana 9 do Trello")
 })
+//http://localhost:3000/sobre
 
 app.get("/contato", (req,res) =>{
     res.send("Meu contato é por email@email.com")
 })
+// http://localhost:3000/contato
 
 // [M1S09] Ex 4 - Parâmetros - Defina uma rota GET que aceite um parâmetro de rota, como '/produto/:id', e responda com uma mensagem personalizada com base no ID do produto fornecido.
 
@@ -23,6 +25,13 @@ app.get("/produto/:id", (req, res) => {
 
 //http://localhost:3000/produto/15
 // Você pesquisou pelo produto com id 15
+
+
+// [M1S09] Ex 5 - Arquivos Estáticos - Configure o Express para servir arquivos estáticos, como imagens, arquivos CSS e JavaScript, de um diretório específico em seu projeto.
+
+app.get("/", function (req, res){
+    res.sendFile(__dirname + "/index.html")
+})
 
 
 app.listen(3000, () =>{
