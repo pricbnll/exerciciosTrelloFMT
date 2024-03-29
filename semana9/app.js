@@ -22,7 +22,7 @@ app.get("/produto/:id", (req, res) => {
     let id = req.params.id
     res.send(`Você pesquisou pelo produto com id ${id}`)
 })
-
+//buscar informação de algo especifico - deletar, buscar ou atualizar algo especifico com id
 //http://localhost:3000/produto/15
 // Você pesquisou pelo produto com id 15
 
