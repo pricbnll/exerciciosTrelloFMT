@@ -59,6 +59,16 @@ const logHoraMiddleware = (req, res, next) => {
 app.use(logHoraMiddleware())
 
 
+// ou simplificando usando o app.use que utilizará em todas as aplicações
+
+// Middleware para registrar informações sobre todas as solicitações recebidas
+// app.use((req, res, next) => {
+//     const horaAtual = new Date().toISOString();
+//     console.log(`[${horaAtual}] Nova solicitação recebida para: ${req.method} ${req.originalUrl}`);
+//     next(); // Chamar next() para passar a solicitação para o próximo middleware
+//   });
+
+
 app.listen(3000, () =>{
     console.log("Servidor online do exercicício do trello - semana 9")
 })
