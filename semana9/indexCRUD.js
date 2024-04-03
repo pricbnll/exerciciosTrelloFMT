@@ -34,35 +34,40 @@ app.post("/users", (req,res) => {
         email: user.email
       };
       users.push(newUser);
-      res.status(201).send('Pessoa adicionada com sucesso.').json(newUser);
+      res.status(201).send(newUser);
     });
     
 // Leitura (Read):
 // Implemente uma rota GET /users que retorne a lista completa de usuários.
     app.get("/users", (req, res) => {
-      res.json(users);
+      res.send(users);
     })
     
 // Implemente uma rota GET /users/:id que retorne os detalhes de um usuário específico com base no ID fornecido na URL.
 
 //feito pelo profe Rawan
 // app.get('/users/:id', (req, res) => {
+//   // console.log(req);
+//   // console.log(req.params);
 //   const { id } = req.params;
-//   const userId = users.find(userId => userId.id === parseInt(id));
-//   if (!user.id) {
+//   // console.log(id)
+//   const pessoa = users.find(user => {
+//     user.id === parseInt(id)
+//   });
+//   if (!pessoa) {
 //       res.status(404).send('Pessoa não encontrada.');
 //       return;
 //   }
-//   res.json(userId);
+//   res.send(users);
 // });
 
     app.get('/users/:id', (req, res) => {
-      const userId = parseInt(req.params.id);
-      const user = users.find(usuario => usuario.id === userId);
+      const id  = parseInt(req.params.id);
+      const user = users.find(user => user.id === id);
       if (user) {
-        res.json(user); // Retorna os detalhes do usuário em formato JSON
+        res.send(user); // Retorna os detalhes do usuário em formato JSON
       } else {
-        res.status(404).json({ error: 'Usuário não encontrado' });      
+        res.status(404).send({ error: 'Usuário não encontrado' });      
 // Se o usuário não for encontrado, retorne uma resposta com status 404 (Not Found).
       }
     });
@@ -76,14 +81,41 @@ app.post("/users", (req,res) => {
 app.put("/users/:id", (req, res) => {
   const {id} = req.params
   const atualizaUsuario = req.body
-  const index = users.findIndex(usuario => usuario.id === parseInt(id))
-  if (index === -1) {
+
+  // solicitaçao no body
+  // {
+  //   name: "foobar",
+  //   email: "foobar"
+  // };
+
+  const index = users.findIndex(user => user.id === parseInt(id))
+  //fazer um console log para ver o que acontece se nao tem nada
+  console.log(index);
+  if (index === -1) { 
       res.status(404).send("Usuário não cadastrado")
       return
   }
   users[index] = {...users[index], ...atualizaUsuario}
-  res.status(200).json({"Usuário atualizado com sucesso!": { ...users[index]}})
+  res.status(200).send({"Usuário atualizado com sucesso!": { ...users[index]}})
 })
+
+// Para enviar uma solicitação PUT para atualizar um usuário usando o Postman, você precisa seguir estes passos:
+
+// Abra o Postman e crie uma nova solicitação.
+// Selecione o método HTTP como PUT.
+// Insira a URL da rota que você configurou para atualizar usuários. Por exemplo: http://localhost:3000/users/:id, onde :id é o ID do usuário que você deseja atualizar.
+// Selecione a guia "Body".
+// Selecione o tipo de dado como "raw" e escolha o formato como "JSON (application/json)".
+// No campo de texto abaixo, insira os novos dados do usuário que você deseja atualizar. Por exemplo:
+// json
+// Copy code
+// {
+//     "name": "Novo Nome",
+//     "email": "novoemail@email.com"
+// }
+// Clique em "Send" para enviar a solicitação.
+// Isso enviará uma solicitação PUT para a rota configurada no seu servidor, enviando os novos dados do usuário no corpo da solicitação. O servidor irá processar essa solicitação, atualizar os dados do usuário correspondente e retornar uma resposta adequada, conforme implementado na rota PUT no servidor.
+
 
 
 // Exclusão (Delete):
@@ -99,7 +131,7 @@ app.delete("/users/:id", (req, res) => {
       return
   }
   const usuarioRemovido = users.splice(index, 1)[0]
-  res.status(200).json({"Usuário removido com sucesso!": usuarioRemovido})
+  res.status(200).send({"Usuário removido com sucesso!": usuarioRemovido})
 })
       
 
