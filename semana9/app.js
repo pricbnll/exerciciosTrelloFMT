@@ -38,39 +38,43 @@ app.get("/", function (req, res){
 
 
 // const logHoraMiddleware = (req, res, next) => {
-//     const horaAtual = new Date().toISOString(); // chatGPT: new Date() é um objeto em JavaScript que representa uma data e hora. Quando você chama new Date(), está criando um novo objeto que contém a data e a hora atuais do sistema..toISOString() é um método que pertence ao objeto Date em JavaScript. Esse método converte a data e hora do objeto Date em uma string no formato ISO 8601. Esse formato é uma convenção internacionalmente reconhecida para representar datas e horas. Ele se parece com isso: "2024-03-29T12:00:00.000Z", onde os diferentes elementos representam ano, mês, dia, hora, minuto, segundo e milissegundos.
+//     const horaAtual = new Date().toISOString(); 
+
+// chatGPT: new Date() é um objeto em JavaScript que representa uma data e hora. Quando você chama new Date(), está criando um novo objeto que contém a data e a hora atuais do sistema..toISOString() é um método que pertence ao objeto Date em JavaScript. Esse método converte a data e hora do objeto Date em uma string no formato ISO 8601. Esse formato é uma convenção internacionalmente reconhecida para representar datas e horas. Ele se parece com isso: "2024-03-29T12:00:00.000Z", onde os diferentes elementos representam ano, mês, dia, hora, minuto, segundo e milissegundos.
+
 //     console.log(
 //       `[${horaAtual}] Nova solicitação recebida para: ${req.method} ${req.originalUrl}`
-//       ); // ChatGPT:  ${req.method}: Aqui, req é uma abreviação comum para "request" (ou solicitação, em português). É um objeto que representa a requisição HTTP que o servidor web recebeu. method é uma propriedade desse objeto que contém o método HTTP usado na solicitação. O método HTTP indica qual tipo de ação o cliente deseja realizar no recurso solicitado. Alguns exemplos comuns de métodos HTTP são "GET", "POST", "PUT" e "DELETE". Portanto, ${req.method} simplesmente retorna o método HTTP usado na solicitação. ${req.originalUrl}: Mais uma vez, req é o objeto que representa a requisição HTTP. originalUrl é outra propriedade desse objeto que contém o URL original solicitado pelo cliente. O URL original inclui o caminho e, opcionalmente, a query string da solicitação HTTP. Por exemplo, se um cliente solicitar http://example.com/foo/bar?param1=value1, ${req.originalUrl} retornaria "/foo/bar?param1=value1".
+//       ); 
+
+// ChatGPT: 
+// ${req.method}: Aqui, req é uma abreviação comum para "request" (ou solicitação, em português). É um objeto que representa a requisição HTTP que o servidor web recebeu. method é uma propriedade desse objeto que contém o método HTTP usado na solicitação. O método HTTP indica qual tipo de ação o cliente deseja realizar no recurso solicitado. Alguns exemplos comuns de métodos HTTP são "GET", "POST", "PUT" e "DELETE". Portanto, ${req.method} simplesmente retorna o método HTTP usado na solicitação.
+// ${req.originalUrl}: Mais uma vez, req é o objeto que representa a requisição HTTP. originalUrl é outra propriedade desse objeto que contém o URL original solicitado pelo cliente. O URL original inclui o caminho e, opcionalmente, a query string da solicitação HTTP. Por exemplo, se um cliente solicitar http://example.com/foo/bar?param1=value1, ${req.originalUrl} retornaria "/foo/bar?param1=value1".
 
 //     next(); // Chamar next() para passar a solicitação para o próximo middleware
 //   };
 
 // app.use(logHoraMiddleware())
 
-const logHoraMiddleware = (req, res, next) => {
-    const horaAtual = new Date().toISOString();
-    console.log(
-      `[${horaAtual}] Nova solicitação recebida para: ${req.method} ${req.originalUrl}`
-      );
-    next(); // Chamar next() para passar a solicitação para o próximo middleware
-  };
-
-app.use(logHoraMiddleware())
-
 
 // ou simplificando usando o app.use que utilizará em todas as aplicações
 
 // Middleware para registrar informações sobre todas as solicitações recebidas
 // app.use((req, res, next) => {
-//     const horaAtual = new Date().toISOString();
-//     console.log(`[${horaAtual}] Nova solicitação recebida para: ${req.method} ${req.originalUrl}`);
-//     next(); // Chamar next() para passar a solicitação para o próximo middleware
-//   });
-
-
-app.listen(3000, () =>{
-    console.log("Servidor online do exercicício do trello - semana 9")
+    //     const horaAtual = new Date().toISOString();
+    //     console.log(`[${horaAtual}] Nova solicitação recebida para: ${req.method} ${req.originalUrl}`);
+    //     next(); // Chamar next() para passar a solicitação para o próximo middleware
+    //   });
+    
+    function logRequest(req, res, next) {
+        console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+        next(); // Chama a próxima função no ciclo de solicitação-resposta
+    }
+    
+    app.use(logRequest); // Aplica o middleware globalmente para todas as rotas
+    
+    
+    app.listen(3000, () =>{
+        console.log("Servidor online do exercicício do trello - semana 9")
 })
 
 
