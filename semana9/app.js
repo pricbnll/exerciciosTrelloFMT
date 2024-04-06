@@ -3,6 +3,10 @@
 const express = require("express")
 const app = express()
 
+app.use(express.json());
+
+app.use(logHoraMiddleware); //Middlewares nas rotas para logar as informações de cada chamada realizada e pode colocar em qualquer local no codigo que funcionará
+
 
 //[M1S09] Ex 2 - Rotas - Adicione rotas ao novo projeto: Uma rota GET que responda à URL '/sobre' com uma mensagem sobre o seu aplicativo. Uma rota GET que responda à URL '/contato' com uma mensagem de contato.
 
@@ -59,18 +63,21 @@ app.get("/", function (req, res){
 // ou simplificando usando o app.use que utilizará em todas as aplicações
 
 // Middleware para registrar informações sobre todas as solicitações recebidas
-// app.use((req, res, next) => {
-    //     const horaAtual = new Date().toISOString();
-    //     console.log(`[${horaAtual}] Nova solicitação recebida para: ${req.method} ${req.originalUrl}`);
-    //     next(); // Chamar next() para passar a solicitação para o próximo middleware
-    //   });
+      const logHoraMiddleware = (req, res, next) => {
+        const horaAtual = new Date().toISOString();
+        console.log(
+          `[${horaAtual}] Nova solicitação recebida para: ${req.method} ${req.originalUrl}`
+          );
+        next(); 
+      };
+
     
-    function logRequest(req, res, next) {
-        console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
-        next(); // Chama a próxima função no ciclo de solicitação-resposta
-    }
+    // function logRequest(req, res, next) {
+    //     console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+    //     next(); // Chama a próxima função no ciclo de solicitação-resposta
+    // }
     
-    app.use(logRequest); // Aplica o middleware globalmente para todas as rotas
+    // app.use(logRequest); // Aplica o middleware globalmente para todas as rotas
     
     
     app.listen(3000, () =>{
