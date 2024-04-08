@@ -90,14 +90,13 @@ app.put("/users/:id", (req, res) => {
 
   const index = users.findIndex(user => user.id === parseInt(id))
   //fazer um console log para ver o que acontece se nao tem nada
-  console.log(index);
+  console.log(index); //se há 1 id ou -1
   if (index === -1) { 
       res.status(404).send("Usuário não cadastrado")
       return
   }
-  users[index] = {...users[index], ...atualizaUsuario}
-  res.status(200).send({"Usuário atualizado com sucesso!": { ...users[index]}})
-})
+  res.status(200).send({"Usuário atualizado com sucesso!": {...atualizaUsuario}})
+})  
 
 // Para enviar uma solicitação PUT para atualizar um usuário usando o Postman, você precisa seguir estes passos:
 
