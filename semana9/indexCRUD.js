@@ -136,6 +136,6 @@ app.delete("/users/:id", (req, res) => {
       
 
     app.listen(PORT, () => {
-    console.log('Servidor do exercícios do CRUD online')
+    console.log(`Servidor do exercícios do CRUD online na PORTA ${PORT}`)
 })
 
