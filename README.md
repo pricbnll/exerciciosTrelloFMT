@@ -16,22 +16,29 @@ São 3 aulas na semana (terças, quintas e nas sextas com resolução dos exerc�
 * SEMANA 4 **com a professora Rayane Cristina**
        - GIT, GITHUB E FUNÇÕES NO JAVASCRIPT, LAÇOS DE REPETIÇÃO
 * SEMANA 5 **com a professora Rayane Cristina**
-       - ARRAYS - MAP, FILTER, REDUCE, OBJETOS SIMPLES - Destructing, Spread/rest operator, npm init, pasta node_modules, package.json e              package-lock.json, comandos de CLI, gitignore
+       - ARRAYS - MAP, FILTER, REDUCE, OBJETOS SIMPLES - Destructing, Spread/rest operator, npm init, pasta node_modules, package.json e package-lock.json, comandos de CLI, gitignore
 * SEMANA 6 **com a professora Rayane Cristina**
        - PROMISE E LOCAL STORAGE, FETCH API, REQUISIÇÕES E ASYNC/AWAIT
 * SEMANA 7 **com o professor Bruno Costa**
        - FUNÇÕES AVANÇADAS E CLOSURES, INTRODUÇÃO À POO EM JAVASCRIPT, ATRIBUTOS E METODOS, USO DO THIS, CONSTRUTIRES E HERANÇA EM JAVASCRIPT
 * SEMANA 8 **com o professor Bruno Costa**
        - POSTGRESQL, COMANDOS DDL E DML, JOIN
-* SEMANA 9 **com o professor Rawan.H** - NODE.JS - EXPRESS
+* SEMANA 9 **com o professor Rawan.H** 
+       - NODE.JS - EXPRESS
+* SEMANA 10 **com o professor Rawan.H** Sequelize e API REST
+       - REVISÃO DE BANCO DE DADOS, Sequelize ORM para NodeJS 
+* SEMANA 11 **com o professor Douglas Cavalcante** 
+       - REVISÃO DE BANCO DE DADOS, Sequelize e API REST
+
 
 
 ## 🛠️ Construído com
 
 - Trello - aprendendo a criar e mover cards.
 - VsCode - aprendendo a usar a ferramenta e suas extensões.
-- GitHub - aprendendo a utilizar sempre enviando ou trazendo para meu local o reposiótio, fsaendo alterações...
-- Node.js - Is=nstalação
+- GitHub - aprendendo a utilizar sempre enviando ou trazendo para meu local o repositório, fazendo alterações...
+- Node.js - Instalação
+- Sequelize - apredendo a usar migration
   
 
 ## 🧑🏻‍🏫 Professores
@@ -39,6 +46,8 @@ São 3 aulas na semana (terças, quintas e nas sextas com resolução dos exerc�
 * **Bruno Costa** - [GitHub](https://github.com/Bruno-Costa-fig)
 * **Rayane Cristina** - [GitHub](https://github.com/raydevcp20)
 * **Rawan.H** - [GitHub](https://github.com/Hawangledt)
+* **Douglas Cavalcante** - [GitHub](https://github.com/douglas-cavalcante)
+
  
 
 ## 📄 Acompanhe as resoluções e dicas de aulas
