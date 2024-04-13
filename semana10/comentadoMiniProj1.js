@@ -100,9 +100,15 @@ function InformacaoChamada(req, res, next) {
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
   next(); // Chama o próximo middleware ou rota
 }
-// app.use(InformacaoChamada); ----> deve ser colcocado antes de todos as chamadas de rotas, inicio do arquivo.
+// app.use(InformacaoChamada); ----> deve ser colocado antes de todos as chamadas de rotas, inicio do arquivo.
 
-//OU colocar este codigo todo no inicio do arquivo, antes de todas as requisições.
+//new Date() está criando um novo objeto que contém a data e a hora atuais do sistema.
+//.toISOString() converte a data e hora do objeto Date em uma string no formato ISO 8601.
+// ${req.method} simplesmente retorna o método HTTP usado na solicitação.
+// ${req.originalUrl} O URL original inclui o caminho e, opcionalmente, a query string da solicitação HTTP. 
+
+
+//OU colocar este código todo no inicio do arquivo, antes de todas as requisições.
 // app.use((req, res, next) => {
 //   const InformacaoChamada = new Date().toISOString();
 //   console.log(`[${InformacaoChamada}] Nova solicitação recebida para: ${req.method} ${req.originalUrl}`);
