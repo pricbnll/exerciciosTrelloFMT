@@ -38,7 +38,10 @@ São 3 aulas na semana (terças, quintas e nas sextas com resolução dos exerc�
 - VsCode - aprendendo a usar a ferramenta e suas extensões.
 - GitHub - aprendendo a utilizar sempre enviando ou trazendo para meu local o repositório, fazendo alterações...
 - Node.js - Instalação
-- Sequelize - apredendo a usar migration
+- Express - CRUD
+- Sequelize - aprendendo a usar migration, models, routes...
+- Postgres
+- Postman 
   
 
 ## 🧑🏻‍🏫 Professores
