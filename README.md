@@ -27,9 +27,15 @@ São 3 aulas na semana (terças, quintas e nas sextas com resolução dos exerc�
        - NODE.JS - EXPRESS
 * SEMANA 10 **com o professor Rawan.H** Sequelize e API REST
        - REVISÃO DE BANCO DE DADOS, Sequelize ORM para NodeJS 
+       
+       **A partir da semana 11 os exercícios estão o [repositório api_escola](https://github.com/pricbnll/api_escola)**
+       
 * SEMANA 11 **com o professor Douglas Cavalcante** 
        - REVISÃO DE BANCO DE DADOS, Sequelize e API REST
-
+* SEMANA 12 **com o professor Douglas Cavalcante** 
+       - Json Web Tokens, Aplicando JWT com Middlewares, RBAC
+* SEMANA 13 **com o professor Douglas Cavalcante** 
+       - Controllers, GIT FLOW
 
 
 ## 🛠️ Construído com
