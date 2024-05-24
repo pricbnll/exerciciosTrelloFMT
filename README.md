@@ -68,7 +68,7 @@ A partir da semana 11 os exercícios estão o [repositório api_escola](https://
 
 ## 🎁 Expressões de gratidão
 
-* Conte a outras pessoas sobre este estudo 📢;
+* Adorando este curso super podendo fazer perguntas para embasar meu rarciocínio 📢;
 * Lab365 e todos os monitores;
 * Qualquer dúvida ou sugestão de melhorar o código eu aceito;
 * Um agradecimento publicamente 🫂 aos melhores amigos de turma que podia ter - TRIP e NATURE!
