@@ -26,10 +26,11 @@ São 3 aulas na semana (terças, quintas e nas sextas com resolução dos exerc�
        - POSTGRESQL, COMANDOS DDL E DML, JOIN
 * SEMANA 9 **com o professor Rawan.H** 
        - NODE.JS - EXPRESS
-* SEMANA 10 **com o professor Rawan.H** Sequelize e API REST
+* SEMANA 10 **com o professor Rawan.H**
+       - Sequelize e API REST
        - REVISÃO DE BANCO DE DADOS, Sequelize ORM para NodeJS 
        
-       **A partir da semana 11 os exercícios estão o [repositório api_escola](https://github.com/pricbnll/api_escola)**
+A partir da semana 11 os exercícios estão o [repositório api_escola](https://github.com/pricbnll/api_escola)
        
 * SEMANA 11 **com o professor Douglas Cavalcante** 
        - REVISÃO DE BANCO DE DADOS, Sequelize e API REST
@@ -70,8 +71,7 @@ São 3 aulas na semana (terças, quintas e nas sextas com resolução dos exerc�
 * Conte a outras pessoas sobre este estudo 📢;
 * Lab365 e todos os monitores;
 * Qualquer dúvida ou sugestão de melhorar o código eu aceito;
-* Um agradecimento publicamente 🫂;
-* etc.
+* Um agradecimento publicamente 🫂 aos melhores amigos de turma que podia ter - TRIP e NATURE!
 
 
 ---
